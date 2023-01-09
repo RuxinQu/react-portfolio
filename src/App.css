@@ -1,15 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html {
   font-size: 18px;
 }
 
 .App {
-  background-color: #2d3748;
+  background-color: #111827;
+  color: #cbd5e0;
+  font-family: 'Roboto', sans-serif;
 }
 
-.navbar {
+.navbar-container {
+  background-color: #1f2937;
+}
+
+.navbar{
   height: 10vh;
+  width: 85%;
+  margin: 0 auto;
 }
 
-.active {
-  color: #fff;
+#about-me{
+  height: 60vh;
 }
