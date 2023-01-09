@@ -5,7 +5,7 @@ export const AboutMe = () => {
   return (
     <div
       id="about-me"
-      className="container-fluid d-flex justify-content-center align-items-center flex-wrap py-5"
+      className="container-fluid d-flex justify-content-center align-items-center flex-wrap pt-3"
     >
       <Avatar
         avatarStyle="Circle"
@@ -20,9 +20,9 @@ export const AboutMe = () => {
         skinColor="Light"
       />
       <div className="col-8 d-flex flex-column justify-content-center align-items-center">
-        <h1 className="text-white py-5">Hi, I'm Ruxin Qu!</h1>
-        <p>
-          I am a Web Developer with a passion to write clean and maintainable
+        <h1 className="text-white py-5">Hi, I'm Ruxin Qu</h1>
+        <p className="line-height-2">
+          I am a Web Developer with a passion to write <span className="orange">clean</span> and <span className="orange">maintainable</span>
           code. <br />
           I'm currently in Full Stack Coding Bootcamp through University of
           Washington, <br />

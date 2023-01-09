@@ -6,9 +6,39 @@
   height: 10vh;
   width: 85%;
   margin: 0 auto;
-  font-size: 1.2rem;
 }
 
 #about-me {
-  min-height: 60vh;
+  min-height: 500px;
+}
+
+.line-height-2 {
+  line-height: 2;
+}
+
+.orange {
+  color: #ff7b19;
+}
+
+#work {
+  min-height: 1000px;
+}
+
+.project {
+  background-color: #f0f8ff20;
+}
+
+.project:hover {
+  transform: scale(1.01);
+  transition: ease-in;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.project a {
+  color: #8eacfe;
+}
+
+.project a:hover {
+  color: #fff;
 }
