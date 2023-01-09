@@ -3,11 +3,11 @@ import Avatar from "avataaars2";
 
 export const AboutMe = () => {
   return (
-    <div id="about-me" className="container-fluid d-flex justify-content-center align-items-center flex-wrap">
+    <div id="about-me" className="container-fluid d-flex justify-content-center align-items-center flex-wrap py-5">
       <Avatar
         avatarStyle="Circle"
         topType="LongHairNotTooLong"
-        accessoriesType="Blank"
+        accessoriesType="Prescription02"
         hairColor="Black"
         facialHairType="Blank"
         clotheType="BlazerSweater"
