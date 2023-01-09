@@ -1,25 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-html {
-  font-size: 18px;
-}
-
 .App {
   background-color: #111827;
   color: #cbd5e0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.navbar-container {
-  background-color: #1f2937;
-}
-
-.navbar{
-  height: 10vh;
-  width: 85%;
-  margin: 0 auto;
-}
-
-#about-me{
-  min-height: 60vh;
-}

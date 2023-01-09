@@ -28,7 +28,7 @@ export const Navbar = ({ currentPage, handlePageChange }) => {
                   currentPage === "About" ? "nav-link active" : "nav-link"
                 }
               >
-                About Me
+                About
               </a>
             </li>
             <li className="nav-item">

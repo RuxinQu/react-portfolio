@@ -1,0 +1,14 @@
+.navbar-container {
+  background-color: #1f2937;
+}
+
+.navbar {
+  height: 10vh;
+  width: 85%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+#about-me {
+  min-height: 60vh;
+}
