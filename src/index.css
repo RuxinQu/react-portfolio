@@ -1,7 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
 html {
-  font-size: 18px;
+  font-size: 20px;
+}
+
+h1{
+  font-size: 2rem !important;
+}
+
+h3{
+  font-size: 1.4rem !important;
+}
+
+h4{
+  font-size: 1.2rem !important;
 }
 
 body {
