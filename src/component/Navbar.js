@@ -2,9 +2,9 @@ import React from "react";
 
 export const Navbar = ({ currentPage, handlePageChange }) => {
   return (
-    <div className="container-fluid bg-dark">
+    <div className="container-fluid navbar-container">
       <nav className="navbar navbar-expand-lg navbar-dark">
-        <a className="navbar-brand font-weight-bold" href="/">
+        <a className="navbar-brand font-weight-bold" href="#">
           Ruxin Qu
         </a>
         <button
@@ -19,7 +19,7 @@ export const Navbar = ({ currentPage, handlePageChange }) => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <a
                 href="#about-me"
