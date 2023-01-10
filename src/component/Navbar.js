@@ -2,71 +2,52 @@ import React from "react";
 
 export const Navbar = ({ currentPage, handlePageChange }) => {
   return (
-    <div className="container-fluid navbar-container">
-      <nav className="navbar navbar-expand-lg navbar-dark">
-        <a className="navbar-brand font-weight-bold" href="#">
-          Ruxin Qu
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a
-                href="#about-me"
-                onClick={() => handlePageChange("About")}
-                className={
-                  currentPage === "About" ? "nav-link active" : "nav-link"
-                }
-              >
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#work"
-                onClick={() => handlePageChange("Work")}
-                className={
-                  currentPage === "Work" ? "nav-link active" : "nav-link"
-                }
-              >
-                Work
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#contact"
-                onClick={() => handlePageChange("Contact")}
-                className={
-                  currentPage === "Contact" ? "nav-link active" : "nav-link"
-                }
-              >
-                Contact
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#contact"
-                onClick={() => handlePageChange("Resume")}
-                className={
-                  currentPage === "Resume" ? "nav-link active" : "nav-link"
-                }
-              >
-                Resume
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav ml-auto p-2 bg-menu">
+        <li className="nav-item">
+          {/* attach an event to the anchor and a conditional statement to it's className to change the color */}
+          <a
+            href="#about-me"
+            onClick={() => handlePageChange("About")}
+            className={currentPage === "About" ? "nav-link active" : "nav-link"}
+          >
+            About
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#work"
+            onClick={() => handlePageChange("Project")}
+            className={
+              currentPage === "Project" ? "nav-link active" : "nav-link"
+            }
+          >
+            Work
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#contact"
+            onClick={() => handlePageChange("Contact")}
+            className={
+              currentPage === "Contact" ? "nav-link active" : "nav-link"
+            }
+          >
+            Contact
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#resume"
+            onClick={() => handlePageChange("Resume")}
+            className={
+              currentPage === "Resume" ? "nav-link active" : "nav-link"
+            }
+          >
+            Resume
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };

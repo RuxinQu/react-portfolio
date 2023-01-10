@@ -19,11 +19,12 @@ export const AboutMe = () => {
         mouthType="Smile"
         skinColor="Light"
       />
-      <div className="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-center">
+      <div className="col-12 col-lg-7 d-flex flex-column justify-content-center align-items-center">
         <h1 className="text-white py-5">Hi, I'm Ruxin Qu</h1>
         <p className="line-height-2">
-          I am a Web Developer with a passion to write <span className="orange">clean</span> and <span className="orange">maintainable</span>
-          code. <br />
+          I am a Full Stack Web Developer with a passion to write{" "}
+          <span className="orange">clean</span> and{" "}
+          <span className="orange">maintainable</span> code. <br />
           I'm currently in Full Stack Coding Bootcamp through University of
           Washington, <br />
           and I have a background M.S degree in computational chemistry.
