@@ -40,3 +40,16 @@ export const workData = [
     repo: "https://github.com/RuxinQu/game-find-your-hat",
   },
 ];
+
+export const frontEnd = ["JQuery", "JavaScript", "Bootstrap", "React"];
+
+export const backEnd = [
+  "Node",
+  "MySQL",
+  "Sequelize",
+  "MongoDB",
+  "Mongoose",
+  "Express",
+  "OOP",
+  "REST APIs",
+];

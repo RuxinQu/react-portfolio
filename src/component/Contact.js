@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 const formStyle = {
-  paddingLeft: "2rem",
+  padding: "0 2rem",
+  marginTop: 20
 };
 
 export const Contact = ({
@@ -22,10 +23,11 @@ export const Contact = ({
           title="map"
           frameborder="0"
           src="https://www.google.com/maps/embed/v1/place?q=seattle&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-          className="map"
+          className="map col-12 col-md-8 col-lg-6"
         ></iframe>
 
         <form style={formStyle} onSubmit={handleSubmit}>
+          <h3 className="text-white text-center">Contact Me</h3>
           <div className="form-group">
             <label for="name">Name</label>
             <input
@@ -57,7 +59,7 @@ export const Contact = ({
               onChange={handleChangeMessage}
               className="form-control"
               id="message"
-              rows="5"
+              rows="4"
               cols="30"
               required
             ></textarea>
