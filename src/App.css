@@ -1,4 +1,7 @@
 .App {
   background-color: #111827;
   color: #9ca3af;
+  height: 100vh;
+  overflow-y: scroll;
+
 }
