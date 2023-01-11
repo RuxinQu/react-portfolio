@@ -1,5 +1,6 @@
 import React from "react";
 import { frontEnd, backEnd } from "../data";
+import { AiOutlineDownload } from "react-icons/ai";
 
 const skillStyle = {
   width: "80%",
@@ -15,6 +16,7 @@ export const Resume = () => {
           type="button"
           className="btn btn-primary mt-5"
         >
+          <AiOutlineDownload style={{ marginRight: 5 }} />
           Download Resume
         </button>
       </div>

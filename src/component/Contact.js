@@ -1,18 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 
 const formStyle = {
   padding: "0 2rem",
-  marginTop: 20
+  marginTop: 20,
 };
 
 export const Contact = ({
   name,
   email,
   message,
+  error,
   handleChangeName,
   handleChangeEmail,
   handleChangeMessage,
-  handleSubmit
+  handleSubmit,
+  handleError,
 }) => {
   return (
     <div id="contact" className="container-fluid">
@@ -33,6 +35,7 @@ export const Contact = ({
             <input
               value={name}
               onChange={handleChangeName}
+              onBlur={handleError}
               id="name"
               type="text"
               className="form-control"
@@ -45,6 +48,7 @@ export const Contact = ({
             <input
               value={email}
               onChange={handleChangeEmail}
+              onBlur={handleError}
               type="email"
               className="form-control"
               id="email"
@@ -57,6 +61,7 @@ export const Contact = ({
             <textarea
               value={message}
               onChange={handleChangeMessage}
+              onBlur={handleError}
               className="form-control"
               id="message"
               rows="4"
@@ -64,6 +69,9 @@ export const Contact = ({
               required
             ></textarea>
           </div>
+ 
+
+							<p>{error}</p>
 
           <button type="submit" className="btn btn-primary">
             Submit

@@ -3,7 +3,7 @@ import { Navbar } from "./Navbar";
 
 export const Header = ({ currentPage, handlePageChange }) => {
   return (
-    <div className="container-fluid navbar-container">
+    <header className=" container-fluid navbar-container">
       <nav className="navbar navbar-expand-lg navbar-dark">
         <a className="navbar-brand font-weight-bold" href="/">
           Ruxin Qu
@@ -21,6 +21,6 @@ export const Header = ({ currentPage, handlePageChange }) => {
         </button>
         <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       </nav>
-    </div>
+    </header>
   );
 };
