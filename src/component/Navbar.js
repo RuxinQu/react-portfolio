@@ -10,16 +10,30 @@ const iconStyle = {
   margin: "0 5 3 0",
 };
 
-export const Navbar = ({ currentPage, handlePageChange }) => {
+export const Navbar = ({
+  currentPage,
+  handlePageChange,
+  expand,
+  setExpand,
+}) => {
+  const handlePageChangeNMenu = (page) => {
+    handlePageChange(page);
+    setExpand(false);
+  };
   return (
-    <div className="collapse navbar-collapse" id="navbarNav">
+    <div
+      className={
+        expand ? "collapse navbar-collapse show" : "collapse navbar-collapse"
+      }
+      id="navbarNav"
+    >
       <ul className="navbar-nav ml-auto p-2 bg-menu">
         <li className="nav-item">
           {/* attach an event to the anchor and a conditional statement to it's className to change the color */}
 
           <a
             href="#about-me"
-            onClick={() => handlePageChange("About")}
+            onClick={() => handlePageChangeNMenu("About")}
             className={
               currentPage === "About" ? "nav-link neon-orange" : "nav-link"
             }
@@ -31,7 +45,7 @@ export const Navbar = ({ currentPage, handlePageChange }) => {
         <li className="nav-item">
           <a
             href="#work"
-            onClick={() => handlePageChange("Project")}
+            onClick={() => handlePageChangeNMenu("Project")}
             className={
               currentPage === "Project" ? "nav-link neon-orange" : "nav-link"
             }
@@ -43,7 +57,7 @@ export const Navbar = ({ currentPage, handlePageChange }) => {
         <li className="nav-item">
           <a
             href="#contact"
-            onClick={() => handlePageChange("Contact")}
+            onClick={() => handlePageChangeNMenu("Contact")}
             className={
               currentPage === "Contact" ? "nav-link neon-orange" : "nav-link"
             }
@@ -55,7 +69,7 @@ export const Navbar = ({ currentPage, handlePageChange }) => {
         <li className="nav-item">
           <a
             href="#resume"
-            onClick={() => handlePageChange("Resume")}
+            onClick={() => handlePageChangeNMenu("Resume")}
             className={
               currentPage === "Resume" ? "nav-link neon-orange" : "nav-link"
             }

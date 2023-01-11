@@ -151,6 +151,10 @@ footer {
   background-color: #fff;
 }
 
+.copyright{
+  font-size: 0.8rem;
+}
+
 /* remove the underline hover effect on tablet and mobile */
 @media (max-width: 991px) {
   .nav-item a::after {

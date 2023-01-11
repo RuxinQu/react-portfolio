@@ -5,7 +5,7 @@ import {FaDev} from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <footer className="container-fluid mt-3">
+    <footer className="container-fluid py-5">
       <ul className="nav justify-content-center">
         <li className="social-icon d-flex justify-content-center align-items-center">
           <a
@@ -40,6 +40,8 @@ export const Footer = () => {
           </a>
         </li>
       </ul>
+      <p className="text-center copyright">Copyright &copy;  2023 RuxinQu</p>
     </footer>
+
   );
 };
