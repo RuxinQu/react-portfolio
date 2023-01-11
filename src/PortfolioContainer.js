@@ -46,7 +46,7 @@ export const PortfolioContainer = () => {
     setMessage("");
   };
 
-  const [error, setError] = useState("");
+  const [error, setError] = useState("Hope you have a nice day!");
   const handleError = ({ target }) => {
     if (!target.value) {
       setError(`${target.id} is required`);

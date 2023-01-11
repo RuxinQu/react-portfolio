@@ -19,14 +19,19 @@ export const Contact = ({
   return (
     <div id="contact" className="container-fluid">
       <div className="row d-flex justify-content-center align-items-center pt-5">
-        <iframe
-          width="100%"
-          height="100%"
-          title="map"
-          frameborder="0"
-          src="https://www.google.com/maps/embed/v1/place?q=seattle&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-          className="map col-12 col-md-8 col-lg-6"
-        ></iframe>
+        <div className="map col-12 col-md-8 col-lg-6 position-relative">
+          <iframe
+            width="100%"
+            height="100%"
+            title="map"
+            frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?q=seattle&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+          ></iframe>
+          <div className="position-absolute info-wrapper round">
+            <a href="mailto: ruxinqu@gmail.com" className="info">Email:ruxinqu@gmail.com</a>
+            <p className="info">Phone: 206-710-5707</p>
+          </div>
+        </div>
 
         <form style={formStyle} onSubmit={handleSubmit}>
           <h3 className="text-white text-center">Contact Me</h3>
@@ -69,9 +74,8 @@ export const Contact = ({
               required
             ></textarea>
           </div>
- 
 
-							<p>{error}</p>
+          <p className="text-white">{error}</p>
 
           <button type="submit" className="btn btn-primary">
             Submit
