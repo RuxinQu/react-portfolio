@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { workData } from "./workData";
+import { workData } from "./data";
 import { AboutMe } from "./component/About";
 import { Project } from "./component/Project";
 import { Contact } from "./component/Contact";
+import { Resume } from "./component/Resume";
 import { Portfolio } from "./component/Portfolio";
 
 export const PortfolioContainer = () => {
@@ -65,6 +66,8 @@ export const PortfolioContainer = () => {
             handleSubmit={handleSubmit}
           />
         );
+      case "Resume":
+        return <Resume />;
       default:
         return <AboutMe />;
     }

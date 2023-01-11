@@ -9,7 +9,11 @@ export const Navbar = ({ currentPage, handlePageChange }) => {
           <a
             href="#about-me"
             onClick={() => handlePageChange("About")}
-            className={currentPage === "About" ? "nav-link active" : "nav-link"}
+            className={
+              currentPage === "About"
+                ? "nav-link active neon-orange"
+                : "nav-link"
+            }
           >
             About
           </a>
@@ -19,7 +23,9 @@ export const Navbar = ({ currentPage, handlePageChange }) => {
             href="#work"
             onClick={() => handlePageChange("Project")}
             className={
-              currentPage === "Project" ? "nav-link active" : "nav-link"
+              currentPage === "Project"
+                ? "nav-link active neon-orange"
+                : "nav-link"
             }
           >
             Work
@@ -30,7 +36,9 @@ export const Navbar = ({ currentPage, handlePageChange }) => {
             href="#contact"
             onClick={() => handlePageChange("Contact")}
             className={
-              currentPage === "Contact" ? "nav-link active" : "nav-link"
+              currentPage === "Contact"
+                ? "nav-link active neon-orange"
+                : "nav-link"
             }
           >
             Contact
@@ -41,7 +49,9 @@ export const Navbar = ({ currentPage, handlePageChange }) => {
             href="#resume"
             onClick={() => handlePageChange("Resume")}
             className={
-              currentPage === "Resume" ? "nav-link active" : "nav-link"
+              currentPage === "Resume"
+                ? "nav-link active neon-orange"
+                : "nav-link"
             }
           >
             Resume
