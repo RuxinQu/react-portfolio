@@ -21,7 +21,7 @@ export const Resume = () => {
       <h3 className="text-white text-center my-4">Skills</h3>
 
       {/* frontEnd skill section */}
-      <h5 className="text-center ">Front-end:</h5>
+      <h5 className="text-center text-white">Front-end:</h5>
       <div
         className="row d-flex justify-content-center m-auto"
         style={skillStyle}
@@ -38,7 +38,7 @@ export const Resume = () => {
       </div>
 
       {/* backend skill section */}
-      <h5 className="text-center mt-4">Back-end:</h5>
+      <h5 className="text-center text-white mt-4">Back-end:</h5>
       <div
         className="row d-flex justify-content-center m-auto"
         style={skillStyle}

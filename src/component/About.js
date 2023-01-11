@@ -19,7 +19,7 @@ export const AboutMe = () => {
         mouthType="Smile"
         skinColor="Light"
       />
-      <div className="col-12 col-lg-7 ">
+      <div className="col-12 col-lg-7 d-flex flex-column align-items-center">
         <h1 className="text-center text-white py-5">Hi, I'm Ruxin Qu</h1>
         <p className="line-height-2">
           I am a Full Stack Web Developer with a passion to write{" "}
