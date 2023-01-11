@@ -2,6 +2,7 @@ import React from "react";
 
 import { Header } from "./Header";
 import { Preloader } from "./Preloader";
+import { Footer } from "./Footer";
 
 export const Portfolio = ({ currentPage, handlePageChange, renderPage,load }) => {
   return (
@@ -9,6 +10,7 @@ export const Portfolio = ({ currentPage, handlePageChange, renderPage,load }) =>
       <Preloader load={load}/>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
+      <Footer/>
     </div>
   );
 };

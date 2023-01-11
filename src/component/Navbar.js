@@ -1,12 +1,9 @@
 import React from "react";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
   AiOutlineContacts,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
 
 const iconStyle = {

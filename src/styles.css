@@ -4,34 +4,31 @@
 }
 
 .neon-orange {
-  text-shadow: 0 0 10px var(--neon-orange), 0 0 21px var(--neon-orange);
+  text-shadow: 0 0 5px var(--neon-orange), 0 0 7px var(--neon-orange),
+    0 0 10px var(--neon-orange), 0 0 21px var(--neon-orange);
 }
 
 #about-me,
 #work,
 #contact,
 #resume {
-  position: relative;
-  top: 10vh;
-  height: 80vh;
+  padding-top: 70px;
 }
 
 /* ---------navbar section--------- */
 .navbar-container {
-  background-color: var(--bg-navbar);
   position: fixed;
   z-index: 2;
+  background-color: var(--bg-navbar);
 }
 
 .navbar {
   width: 85%;
-  height: 10vh;
+  height: 70px;
   margin: 0 auto;
 }
 
-.bg-menu {
-  background-color: var(--bg-navbar);
-}
+
 
 /* change the padding to margin to the underline width=100 can work  */
 .navbar-nav .nav-link {
@@ -83,6 +80,10 @@
 }
 
 /* ---------about me section--------- */
+#about-me {
+  min-height: 60vh;
+}
+
 .line-height-2 {
   line-height: 2;
 }
@@ -126,10 +127,31 @@ img {
   max-width: none;
 }
 
+/* ---------footer section--------- */
+footer {
+  position: relative;
+  top: 70px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #9ca3af;
+  margin: 1rem;
+  border-radius: 50%;
+}
+
+.social-icon:hover {
+  background-color: #fff;
+}
+
 /* remove the underline hover effect on tablet and mobile */
 @media (max-width: 991px) {
   .nav-item a::after {
     display: none;
+  }
+  .bg-menu {
+    background-color: var(--bg-navbar);
   }
 }
 
