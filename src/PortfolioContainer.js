@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { workData } from "./data";
 import { AboutMe } from "./component/About";
 import { Project } from "./component/Project";
@@ -7,6 +7,17 @@ import { Resume } from "./component/Resume";
 import { Portfolio } from "./component/Portfolio";
 
 export const PortfolioContainer = () => {
+  const [load, setLoad] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoad(false);
+    }, 1100);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
   const [currentPage, setCurrentPage] = useState("About");
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -77,6 +88,7 @@ export const PortfolioContainer = () => {
       currentPage={currentPage}
       handlePageChange={handlePageChange}
       renderPage={renderPage}
+      load={load}
     />
   );
 };
