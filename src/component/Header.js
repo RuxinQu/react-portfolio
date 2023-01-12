@@ -1,29 +1,104 @@
 import React, { useState } from "react";
-import { Navbar } from "./Navbar";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import {
+  AiOutlineFundProjectionScreen,
+  AiOutlineUser,
+  AiOutlineContacts,
+} from "react-icons/ai";
+import { CgFileDocument } from "react-icons/cg";
+
+const iconStyle = {
+  margin: "0 5 3 0",
+};
 
 export const Header = ({ currentPage, handlePageChange }) => {
+  // handle the page change and collapse the menu dropdown
   const [expand, setExpand] = useState(false);
+  const handleClick = (page) => {
+    handlePageChange(page);
+    setExpand(false);
+  };
 
   return (
-    <header className=" container-fluid navbar-container">
-      <nav className="navbar navbar-expand-lg navbar-dark">
-        <a className="navbar-brand font-weight-bold" href="/">
+    <Navbar expanded={expand} fixed="top" expand="md">
+      <Container>
+        <Navbar.Brand href="#" className="d-flex text-white">
           Ruxin Qu
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          onClick={() => (expand ? setExpand(false) : setExpand(true))}
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          className="bg-menu"
+          onClick={() => {
+            setExpand(expand ? false : "expanded");
+          }}
         >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <Navbar
-          expand={expand}
-          setExpand={setExpand}
-          currentPage={currentPage}
-          handlePageChange={handlePageChange}
-        />
-      </nav>
-    </header>
+          {/* menu bar. The default color doesn't show on the dark background. change the color by adding spans */}
+          <span></span>
+          <span></span>
+          <span></span>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          {/* conditional rendering the pape so the page doesn't refresh only the content changes */}
+          <Nav className="ml-auto">
+            {/* about me page */}
+            <Nav.Item>
+              <Nav.Link
+                className={
+                  currentPage === "About" ? "nav-link neon-orange" : "nav-link"
+                }
+                href="#about-me"
+                onClick={() => handleClick("About")}
+              >
+                <AiOutlineUser style={iconStyle} />
+                About
+              </Nav.Link>
+            </Nav.Item>
+            {/* work page */}
+            <Nav.Item>
+              <Nav.Link
+                className={
+                  currentPage === "Project"
+                    ? "nav-link neon-orange"
+                    : "nav-link"
+                }
+                href="#work"
+                onClick={() => handleClick("Project")}
+              >
+                <AiOutlineFundProjectionScreen style={iconStyle} />
+                Work
+              </Nav.Link>
+            </Nav.Item>
+            {/* contact page */}
+            <Nav.Item>
+              <Nav.Link
+                className={
+                  currentPage === "Contact"
+                    ? "nav-link neon-orange"
+                    : "nav-link"
+                }
+                href="#contact"
+                onClick={() => handleClick("Contact")}
+              >
+                <AiOutlineContacts style={iconStyle} />
+                Contact
+              </Nav.Link>
+            </Nav.Item>
+            {/* resume page */}
+            <Nav.Item>
+              <Nav.Link
+                className={
+                  currentPage === "Resume" ? "nav-link neon-orange" : "nav-link"
+                }
+                href="#resume"
+                onClick={() => handleClick("Resume")}
+              >
+                <CgFileDocument style={iconStyle} />
+                Resume
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };

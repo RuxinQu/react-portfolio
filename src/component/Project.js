@@ -1,6 +1,8 @@
 import React from "react";
 
-export const Project = ({work}) => {
+// this is a template component used to represent one project card.
+//  The mapping code is implemented in the PsortfolioContainer.js file
+export const Project = ({ work }) => {
   return (
     <div className="col-11 col-md-5 col-lg-3 project m-1 py-2">
       <h6 className="text-center mb-0 mt-2">{work.title}</h6>

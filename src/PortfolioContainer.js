@@ -1,68 +1,36 @@
 import React, { useEffect, useState } from "react";
 import { workData } from "./data";
+import { Preloader } from "./component/Preloader";
+import { Header } from "./component/Header";
 import { AboutMe } from "./component/About";
 import { Project } from "./component/Project";
 import { Contact } from "./component/Contact";
 import { Resume } from "./component/Resume";
-import { Portfolio } from "./component/Portfolio";
+import { Footer } from "./component/Footer";
 
 export const PortfolioContainer = () => {
+  // loader state. default is true.
   const [load, setLoad] = useState(true);
 
+  // useEffect for the loader. show loader when refreshing the page. 1.1s later change the loader to not display.
+  // dependency array is empty only rendered during mounting
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoad(false);
     }, 1100);
+    // clear the useEffect
     return () => {
       clearTimeout(timer);
     };
   }, []);
 
+  // state to change the current page
   const [currentPage, setCurrentPage] = useState("About");
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
 
-  const [name, setName] = useState("");
-  const handleChangeName = ({ target }) => {
-    setName(target.value);
-  };
-
-  const [email, setEmail] = useState("");
-  const handleChangeEmail = ({ target }) => {
-    setEmail(target.value);
-  };
-
-  const [message, setMessage] = useState("");
-  const handleChangeMessage = ({ target }) => {
-    setMessage(target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Form submitted!");
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
-
-  const [error, setError] = useState("Hope you have a nice day!");
-  const handleError = ({ target }) => {
-    if (!target.value) {
-      setError(`${target.id} is required`);
-      return;
-    }
-    if (target.id === "email") {
-      const validEmail =
-        /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(
-          target.value
-        );
-      if (!validEmail) {
-        setError(`email is invalid`);
-      }
-    }
-  };
-
+  // change the content based on the currentPage
   const renderPage = () => {
     // change the page regarding to the currentPage state
     switch (currentPage) {
@@ -83,19 +51,7 @@ export const PortfolioContainer = () => {
           </div>
         );
       case "Contact":
-        return (
-          <Contact
-            name={name}
-            email={email}
-            message={message}
-            error={error}
-            handleChangeName={handleChangeName}
-            handleChangeEmail={handleChangeEmail}
-            handleChangeMessage={handleChangeMessage}
-            handleSubmit={handleSubmit}
-            handleError={handleError}
-          />
-        );
+        return <Contact />;
       case "Resume":
         return <Resume />;
       default:
@@ -103,11 +59,12 @@ export const PortfolioContainer = () => {
     }
   };
   return (
-    <Portfolio
-      currentPage={currentPage}
-      handlePageChange={handlePageChange}
-      renderPage={renderPage}
-      load={load}
-    />
+    <div>
+      <Preloader load={load} />
+      {/* Header component inherit the parent props */}
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      {renderPage()}
+      <Footer />
+    </div>
   );
 };
