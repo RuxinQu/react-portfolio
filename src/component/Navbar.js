@@ -16,21 +16,24 @@ export const Navbar = ({
   expand,
   setExpand,
 }) => {
+  // handle the page change and collapse the menu dropdown
   const handlePageChangeNMenu = (page) => {
-    handlePageChange(page);
+    handlePageChange(page)
     setExpand(false);
   };
   return (
     <div
+      // if expand is true, add a show class to the navbar menu dropdown
       className={
-        expand ? "collapse navbar-collapse show" : "collapse navbar-collapse"
+        expand ? "collapse navbar-collapse show slow" : "collapse navbar-collapse"
       }
       id="navbarNav"
     >
+      {/* attach an event to the anchor and a conditional statement to it's className to change the color 
+      and toggle the menu dropdown */}
       <ul className="navbar-nav ml-auto p-2 bg-menu">
+        {/* -----------home page----------- */}
         <li className="nav-item">
-          {/* attach an event to the anchor and a conditional statement to it's className to change the color */}
-
           <a
             href="#about-me"
             onClick={() => handlePageChangeNMenu("About")}
@@ -41,6 +44,7 @@ export const Navbar = ({
             <AiOutlineUser style={iconStyle} />
             About
           </a>
+          {/* -----------work page----------- */}
         </li>
         <li className="nav-item">
           <a
@@ -54,6 +58,7 @@ export const Navbar = ({
             Work
           </a>
         </li>
+        {/* -----------contact page----------- */}
         <li className="nav-item">
           <a
             href="#contact"
@@ -66,6 +71,7 @@ export const Navbar = ({
             Contact
           </a>
         </li>
+        {/* -----------resume page----------- */}
         <li className="nav-item">
           <a
             href="#resume"
