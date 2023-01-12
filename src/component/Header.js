@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
-  AiOutlineContacts
+  AiOutlineContacts,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 
@@ -32,12 +32,15 @@ export const Header = ({ currentPage, handlePageChange }) => {
             setExpand(expand ? false : "expanded");
           }}
         >
+          {/* menu bar. The default color doesn't show on the dark background. change the color by adding spans */}
           <span></span>
           <span></span>
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
+          {/* conditional rendering the pape so the page doesn't refresh only the content changes */}
           <Nav className="ml-auto">
+            {/* about me page */}
             <Nav.Item>
               <Nav.Link
                 className={
@@ -50,7 +53,7 @@ export const Header = ({ currentPage, handlePageChange }) => {
                 About
               </Nav.Link>
             </Nav.Item>
-
+            {/* work page */}
             <Nav.Item>
               <Nav.Link
                 className={
@@ -65,7 +68,7 @@ export const Header = ({ currentPage, handlePageChange }) => {
                 Work
               </Nav.Link>
             </Nav.Item>
-
+            {/* contact page */}
             <Nav.Item>
               <Nav.Link
                 className={
@@ -80,7 +83,7 @@ export const Header = ({ currentPage, handlePageChange }) => {
                 Contact
               </Nav.Link>
             </Nav.Item>
-
+            {/* resume page */}
             <Nav.Item>
               <Nav.Link
                 className={
