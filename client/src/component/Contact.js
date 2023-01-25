@@ -1,56 +1,50 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const formStyle = {
   padding: "0 2rem",
-  marginTop: 20,
 };
 
 export const Contact = () => {
-  // handle name input controlled form
-  const [name, setName] = useState("");
-  const handleChangeName = ({ target }) => {
-    setName(target.value);
-  };
+  // handle input controlled form
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const { name, email, message } = formState;
+  const handleChange = ({ target }) =>
+    setFormState((prev) => ({
+      ...prev,
+      [target.name]: target.value,
+    }));
 
-  // handle email input controlled form
-  const [email, setEmail] = useState("");
-  const handleChangeEmail = ({ target }) => {
-    setEmail(target.value);
-  };
-
-  // handle message input controlled form
-  const [message, setMessage] = useState("");
-  const handleChangeMessage = ({ target }) => {
-    setMessage(target.value);
-  };
-
-  // after submit the form, all input field is set to be blank
+  // after submit the form, all input field is set to be blank, a toast will show on the top of the page
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Form submitted!");
-    setName("");
-    setEmail("");
-    setMessage("");
+    setFormState({ name: "", email: "", message: "" });
+    toast.success("Form submitted!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
   };
 
   // when the curser clicks outside the input field without entering right data, send an alert at the bottom of the form
-  const [error, setError] = useState("Hope you have a nice day!");
+  const [error, setError] = useState();
   const handleError = ({ target }) => {
     // alert input name is required when no input
     if (!target.value) {
-      setError(`${target.id} is required`);
+      setError(`${target.name} is required`);
       return;
     }
-    // email validation. alert if email is invalid
-    if (target.id === "email") {
-      const validEmail =
-        /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(
-          target.value
-        );
-      if (!validEmail) {
-        setError(`email is invalid`);
-      }
-    }
+    setError('')
   };
   return (
     <div id="contact" className="container-fluid">
@@ -61,7 +55,6 @@ export const Contact = () => {
             width="100%"
             height="100%"
             title="map"
-            frameborder="0"
             src="https://www.google.com/maps/embed/v1/place?q=seattle&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           ></iframe>
           {/* contact info on top of the map */}
@@ -80,9 +73,9 @@ export const Contact = () => {
             <label for="name">Name</label>
             <input
               value={name}
-              onChange={handleChangeName}
+              onChange={handleChange}
               onBlur={handleError}
-              id="name"
+              name="name"
               type="text"
               className="form-control"
               placeholder="Enter name"
@@ -93,11 +86,11 @@ export const Contact = () => {
             <label for="email">Email address</label>
             <input
               value={email}
-              onChange={handleChangeEmail}
+              onChange={handleChange}
               onBlur={handleError}
+              name="email"
               type="email"
               className="form-control"
-              id="email"
               placeholder="Enter email"
               required
             />
@@ -106,21 +99,34 @@ export const Contact = () => {
             <label for="message">Message</label>
             <textarea
               value={message}
-              onChange={handleChangeMessage}
+              onChange={handleChange}
               onBlur={handleError}
+              type="text"
               className="form-control"
-              id="message"
-              rows="4"
+              name="message"
+              rows="3"
               cols="30"
               required
             ></textarea>
           </div>
 
-          <p className="text-white">{error}</p>
+          <p className="text-warning"> {error ? error : <br />} </p>
 
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
+          <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
         </form>
       </div>
     </div>
