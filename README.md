@@ -1,14 +1,18 @@
 # react-portfolio 
 
 ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 ![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-![github-pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)
-![badge](https://img.shields.io/github/languages/top/ruxinqu/react-portfolio)
+
+
+[![Nodemailer](./client/public/assets/nm_logo.png)](https://nodemailer.com/about/)
+
 
 ## Description
 This is Ruxin Qu's react portfolio. It's made with [create-react-app](https://create-react-app.dev).
 
-View deployed link: https://ruxinqu.github.io/react-portfolio/
+View deployed link: https://react-portfolio-rq.herokuapp.com/
 
 ## Installation
 
@@ -17,16 +21,19 @@ View deployed link: https://ruxinqu.github.io/react-portfolio/
 3. Run `npm start` to start the server.
 
 ## Usage
-1. Click the link and see my portfolio!
+1. Click the link and see my portfolio! 
 2. The website is responsive to different screen sizes.
+3. User is able to send messages through the contact form.
 3. The following animation shows the website's appearance and functionality:
 
-![screenshot](./public/assets/portfolio.png)›
+![screenshot](./client/public/assets/portfolio.png)›
 
 
 ## Technologies Used
+- [Nodemailer](https://nodemailer.com/about/)
 - [Avataaars2](https://www.npmjs.com/package/avataaars2)
 - [React-Icons](https://react-icons.github.io/react-icons/)
+- [React-toastify](https://www.npmjs.com/package/react-toastify)
 - [React-Bootstrap](https://react-bootstrap.github.io)
 - [React-Github-Calendar](http://react-component.github.io/calendar/)
 - [Bootstrap](https://getbootstrap.com)
