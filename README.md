@@ -32,6 +32,7 @@ View deployed link: https://ruxinqu.github.io/react-portfolio/
 - [Bootstrap](https://getbootstrap.com)
 - [gh-pages](https://www.npmjs.com/package/gh-pages)
 - [SVG-loaders](https://github.com/SamHerbert/SVG-Loaders)
+- [React-toastify](https://www.npmjs.com/package/react-toastify)
 
 ## Contact Me
 Email: ruxinqu@gmail.com
