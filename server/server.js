@@ -4,7 +4,7 @@ const path = require('path');
 const cors = require("cors");
 const { transporter, router } = require("./api/email");
 
-const port = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -20,8 +20,8 @@ app.get("/", (req, res) => {
 
 app.use(router);
 
-app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on port: ${PORT}`);
   transporter.verify((err, success) => {
     err
       ? console.log(err)
