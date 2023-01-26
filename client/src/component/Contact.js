@@ -21,19 +21,44 @@ export const Contact = () => {
     }));
 
   // after submit the form, all input field is set to be blank, a toast will show on the top of the page
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormState({ name: "", email: "", message: "" });
-    toast.success("Form submitted!", {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-    });
+    try {
+      const response = await fetch("/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formState),
+      });
+      if (response.ok) {
+        setFormState({ name: "", email: "", message: "" });
+        toast.success("Form submitted!", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+      } else {
+        toast.error("Fail to submit the form!", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+      }
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   // when the curser clicks outside the input field without entering right data, send an alert at the bottom of the form
@@ -44,7 +69,7 @@ export const Contact = () => {
       setError(`${target.name} is required`);
       return;
     }
-    setError('')
+    setError("");
   };
   return (
     <div id="contact" className="container-fluid">
