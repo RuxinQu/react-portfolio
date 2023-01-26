@@ -6,7 +6,15 @@ const port = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use(router)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../client/build")));
+}
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
+
+app.use(router);
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
@@ -15,6 +23,4 @@ app.listen(port, () => {
       ? console.log(err)
       : console.log(`=== Server is ready to take messages: ${success} ===`);
   });
-
-
 });
