@@ -8,11 +8,9 @@ export const Project = ({ work }) => {
       <h6 className="text-center mb-0 mt-2">{work.title}</h6>
       <img className="w-100" src={work.img} alt={work.alt} />
       <div className="d-flex justify-content-around">
-        {work.page && (
-          <a target="_blank" href={work.page} rel="noreferrer">
-            View Page
-          </a>
-        )}
+        <a target="_blank" href={work.page} rel="noreferrer">
+          View Page
+        </a>
         <a target="_blank" href={work.repo} rel="noreferrer">
           Repository
         </a>

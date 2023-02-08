@@ -14,6 +14,13 @@ export const workData = [
     repo: "https://github.com/RuxinQu/Raining-Cats-and-Dogs",
   },
   {
+    title: "FitHub",
+    img: "./assets/fithub.png",
+    alt: "fithub",
+    page: "https://fithub-fitness.herokuapp.com",
+    repo: "https://github.com/RuxinQu/fithub",
+  },
+  {
     title: "My Blog",
     img: "./assets/my-blog.png",
     alt: "my-blog",
@@ -31,13 +38,8 @@ export const workData = [
     title: "Employee Tracker",
     img: "./assets/employee-tracker.png",
     alt: "employee-tracker",
+    page: "https://drive.google.com/file/d/1oX6RJRk-lzV2KR__T3LWggxwrKwuRMKb/view",
     repo: "https://github.com/RuxinQu/employee-tracker",
-  },
-  {
-    title: "Game Find Your Hat",
-    img: "./assets/game-find-your-hat.png",
-    alt: "game-find-your-hat",
-    repo: "https://github.com/RuxinQu/game-find-your-hat",
   },
 ];
 
