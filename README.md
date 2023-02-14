@@ -1,22 +1,21 @@
-# react-portfolio 
+# react-portfolio
 
 ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-
+![Gmail](https://img.shields.io/badge/Gmail%20Api-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 
 [![Nodemailer](./client/public/assets/nm_logo.png)](https://nodemailer.com/about/)
 
-
 ## Description
-This is Ruxin Qu's react portfolio. It's made with [create-react-app](https://create-react-app.dev).
 
-View deployed link: 
+This is Ruxin Qu's react portfolio.
 
-[![Azure](https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://react-portfolio-rq.azurewebsites.net)
+View deployed link:
 
-[![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://react-portfolio-rq.herokuapp.com/ ) 
-
+1. [![Azure](https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://react-portfolio-rq.azurewebsites.net)
+2. [![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://react-portfolio-rq.herokuapp.com/)
+3. https://ruxinqu.com (forward to heroku)
 
 ## Installation
 
@@ -25,15 +24,16 @@ View deployed link:
 3. Run `npm start` to start the server.
 
 ## Usage
-1. Click the link and see my portfolio! 
+
+1. Click the link and see my portfolio!
 2. The website is responsive to different screen sizes.
 3. User is able to send messages through the contact form.
-3. The following animation shows the website's appearance and functionality:
+4. The following animation shows the website's appearance and functionality:
 
 ![screenshot](./client/public/assets/portfolio.png)›
 
-
 ## Technologies Used
+
 - [Nodemailer](https://nodemailer.com/about/)
 - [Avataaars2](https://www.npmjs.com/package/avataaars2)
 - [React-Icons](https://react-icons.github.io/react-icons/)
@@ -46,4 +46,5 @@ View deployed link:
 - [React-toastify](https://www.npmjs.com/package/react-toastify)
 
 ## Contact Me
+
 Email: ruxinqu@gmail.com
