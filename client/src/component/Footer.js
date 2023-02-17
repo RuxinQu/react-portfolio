@@ -1,5 +1,4 @@
 import React from "react";
-
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaDev } from "react-icons/fa";
 
@@ -41,7 +40,9 @@ export const Footer = () => {
           </a>
         </li>
       </ul>
-      <p className="text-center copyright">Copyright &copy; 2023 RuxinQu</p>
+      <p className="text-center" style={{ fontSize: "0.8rem" }}>
+        Copyright &copy; 2023 RuxinQu
+      </p>
     </footer>
   );
 };

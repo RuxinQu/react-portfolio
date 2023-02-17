@@ -6,9 +6,9 @@ const skillStyle = {
   width: "80%",
 };
 
-export const Resume = () => {
+export default function Resume() {
   return (
-    <div id="resume" className="container-fluid">
+    <div id="resume" className="container-fluid" style={{ paddingTop: 70 }}>
       {/* download button */}
       <div className="row d-flex justify-content-center ">
         <button
@@ -58,4 +58,4 @@ export const Resume = () => {
       </div>
     </div>
   );
-};
+}

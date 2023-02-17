@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { workData } from "./data";
 import { Preloader } from "./component/Preloader";
-import { Header } from "./component/Header";
-import { AboutMe } from "./component/About";
+import { Header } from "./page/Header";
+import { AboutMe } from "./page/Home";
 import { Project } from "./component/Project";
 import { Contact } from "./component/Contact";
-import { Resume } from "./component/Resume";
+import { Resume } from "./page/Resume";
 import { Footer } from "./component/Footer";
 
 export const PortfolioContainer = () => {
