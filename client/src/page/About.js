@@ -1,4 +1,4 @@
-import { MotionAvatar } from "../component/Avatar";
+import Avatar from "avataaars2";
 import GitHubCalendar from "react-github-calendar";
 import { Introduction } from "../component/Introduction";
 
@@ -6,7 +6,18 @@ export default function About() {
   return (
     <div id="about-me" className="container-fluid">
       <div className="row d-flex justify-content-center align-items-center flex-wrap">
-        <MotionAvatar />
+        <Avatar
+          avatarStyle="Circle"
+          topType="LongHairBob"
+          accessoriesType="Prescription02"
+          hairColor="Black"
+          facialHairType="Blank"
+          clotheType="BlazerSweater"
+          eyeType="Default"
+          eyebrowType="Default"
+          mouthType="Smile"
+          skinColor="Light"
+        />
         <Introduction />
       </div>
       <div className="row">

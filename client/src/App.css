@@ -1,10 +1,12 @@
 .App {
   color: #9ca3af;
+  min-height: 100vh;
+  background-image: linear-gradient(#050871 0%, #02010c 97.5%);
 }
 
 :root {
   --neon-orange: #f17105;
-  --bg-navbar: rgb(11, 5, 75);
+  --bg-navbar: #020132;
 }
 
 a:hover {
@@ -16,13 +18,8 @@ a:hover {
     0 0 10px var(--neon-orange), 0 0 21px var(--neon-orange);
 }
 
-/* background for tsparticles and loader */
-canvas,
 .preloader {
-  background-image: linear-gradient(
-    hsl(238, 92%, 23%) 0%,
-    hsl(245, 89%, 11%) 97.5%
-  );
+  background-image: linear-gradient(#050871 0%, #02010c 97.5%);
 }
 
 #about-me,
@@ -30,6 +27,8 @@ canvas,
 #resume,
 #work {
   padding-top: 50px;
+  position: relative;
+  z-index: 2;
 }
 
 /* ---------navbar section--------- */
@@ -114,7 +113,6 @@ article.react-activity-calendar {
 .side-icons {
   position: fixed;
   z-index: 2;
-  width: 100%;
   top: 50%;
   left: 0;
 }
