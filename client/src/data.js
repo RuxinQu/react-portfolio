@@ -43,15 +43,13 @@ export const workData = [
   },
 ];
 
-export const frontEnd = ["Bootstrap", "jQuery", "React", "Mocha"];
+export const frontEnd = ["React", "Bootstrap", "jQuery", "Mocha"];
 
 export const backEnd = [
   "Node",
   "Express",
   "MySQL",
   "MongoDB",
-  "Express",
-  "OOP",
   "GraphQL",
   "REST APIs",
 ];

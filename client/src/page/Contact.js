@@ -69,7 +69,7 @@ export default function Contact() {
     setError("");
   };
   return (
-    <div id="contact" className="container-fluid" style={{ paddingTop: 70 }}>
+    <div id="contact" className="container-fluid">
       <div className="row d-flex justify-content-center align-items-center pt-5">
         <SeattleMap />
         <ContactForm

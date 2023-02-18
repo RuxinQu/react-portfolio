@@ -33,6 +33,7 @@ export const Preloader = () => {
           height: "100%",
           zIndex: 999,
         }}
+        wrapperClass="preloader"
         visible={true}
       />
     )

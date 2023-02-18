@@ -8,7 +8,7 @@ const skillStyle = {
 
 export default function Resume() {
   return (
-    <div id="resume" className="container-fluid" style={{ paddingTop: 70 }}>
+    <div id="resume" className="container-fluid">
       {/* download button */}
       <div className="row d-flex justify-content-center ">
         <button
@@ -21,7 +21,7 @@ export default function Resume() {
           Download Resume
         </button>
       </div>
-      <h3 className="text-white text-center my-4">Skills</h3>
+      <h3 className="text-white text-center my-4 ">Skills</h3>
       {/* frontEnd skill section */}
       <h5 className="text-center text-white">Front-end:</h5>
       <div
@@ -31,10 +31,8 @@ export default function Resume() {
         {/* mapping through the frontEnd array */}
         {frontEnd.map((skill) => {
           return (
-            <div className="col-12 col-md-6 col-lg-3">
-              <h6 className="skill text-center p-3 round" key={skill}>
-                {skill}
-              </h6>
+            <div className="col-12 col-md-6 col-lg-3" key={skill}>
+              <h6 className="skill text-center p-3 round">{skill}</h6>
             </div>
           );
         })}
@@ -48,10 +46,8 @@ export default function Resume() {
         {/* mapping through the backEnd array */}
         {backEnd.map((skill) => {
           return (
-            <div className="col-12 col-md-6 col-lg-3">
-              <h6 className="skill text-center p-3 round" key={skill}>
-                {skill}
-              </h6>
+            <div className="col-12 col-md-6 col-lg-3" key={skill}>
+              <h6 className="skill text-center p-3 round">{skill}</h6>
             </div>
           );
         })}
