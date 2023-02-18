@@ -18,7 +18,7 @@ export const ContactForm = ({
       {/* contact form. add event listener for all the input fields and the submit button */}
       <h3 className="text-white text-center">Contact Me</h3>
       <div className="form-group">
-        <label for="name">Name</label>
+        <label>Name</label>
         <input
           value={formState.name}
           onChange={handleChange}
@@ -31,7 +31,7 @@ export const ContactForm = ({
         />
       </div>
       <div className="form-group">
-        <label for="email">Email address</label>
+        <label>Email address</label>
         <input
           value={formState.email}
           onChange={handleChange}
@@ -44,7 +44,7 @@ export const ContactForm = ({
         />
       </div>
       <div className="form-group">
-        <label for="message">Message</label>
+        <label>Message</label>
         <textarea
           value={formState.message}
           onChange={handleChange}

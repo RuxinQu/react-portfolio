@@ -8,7 +8,7 @@ const skillStyle = {
 
 export default function Resume() {
   return (
-    <div id="resume" className="container-fluid" style={{ paddingTop: 70 }}>
+    <div id="resume" className="container-fluid" style={{ paddingTop: 20 }}>
       {/* download button */}
       <div className="row d-flex justify-content-center ">
         <button
@@ -21,7 +21,7 @@ export default function Resume() {
           Download Resume
         </button>
       </div>
-      <h3 className="text-white text-center my-4">Skills</h3>
+      <h3 className="text-white text-center my-4 ">Skills</h3>
       {/* frontEnd skill section */}
       <h5 className="text-center text-white">Front-end:</h5>
       <div

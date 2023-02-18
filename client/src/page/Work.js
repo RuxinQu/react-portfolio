@@ -4,7 +4,7 @@ import { workData } from "../data";
 
 export default function Work() {
   return (
-    <div id="work" style={{ paddingTop: 70 }}>
+    <div id="work" style={{ paddingTop: 50 }}>
       <h3 className="text-center text-white py-3">My Work</h3>
       <div className="container-fluid">
         <div className="row d-flex justify-content-center">

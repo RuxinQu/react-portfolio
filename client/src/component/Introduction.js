@@ -7,7 +7,7 @@ export const Introduction = () => {
   return (
     <div className="col-11 col-lg-7 d-flex flex-column align-items-center">
       <h1 className="text-center text-white py-5 ">Hi, I'm Ruxin Qu</h1>
-      <ul>
+      <ul style={{ lineHeight: "2rem" }}>
         <li>1 year coding experience and 4 years Linux/Unix experience.</li>
         <li>
           Full Stack Web Developer with a passion to write{" "}

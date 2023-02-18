@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { TsParticles } from "./component/Tsparticles";
 import { Preloader } from "./component/Preloader";
+import { Header } from "./component/Header";
 import { Footer } from "./component/Footer";
 import Contact from "./page/Contact";
 import About from "./page/About";
 import Work from "./page/Work";
 import Resume from "./page/Resume";
-import Header from "./page/Header";
 import "./App.css";
 import "./index.css";
-import "./styles.css";
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
+      <TsParticles />
     </div>
   );
 }

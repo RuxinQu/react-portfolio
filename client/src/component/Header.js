@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import {
@@ -12,9 +12,25 @@ const iconStyle = {
   margin: "0 5 3 0",
 };
 
-export default function Header() {
+export const Header = () => {
+  const [colorChange, setColorchange] = useState(false);
+
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
+
   return (
-    <Navbar fixed="top" collapseOnSelect expand="md">
+    <Navbar
+      sticky="top"
+      collapseOnSelect
+      expand="md"
+      className={colorChange ? "navbar colorChange" : "navbar"}
+    >
       <Container>
         <Navbar.Brand href="/" className="d-flex text-white">
           Ruxin Qu
@@ -63,4 +79,4 @@ export default function Header() {
       </Container>
     </Navbar>
   );
-}
+};
