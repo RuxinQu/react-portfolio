@@ -20,10 +20,10 @@ export const TsParticles = () => {
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-        fullScreen: {
-          enable: true,
-          zIndex: -1,
-        },
+        // fullScreen: {
+        //   enable: true,
+        //   zIndex: -1,
+        // },
         interactivity: {
           events: {
             onClick: {
@@ -59,7 +59,7 @@ export const TsParticles = () => {
               enable: true,
               area: 800,
             },
-            value: 25,
+            value: 30,
           },
           shape: {
             type: "circle",
