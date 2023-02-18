@@ -4,8 +4,8 @@ import { FaDev } from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <footer className="container-fluid py-5">
-      <ul className="nav justify-content-center">
+    <footer className="container-fluid py-5 position-relative">
+      <ul className="nav flex-column side-icons">
         {/* github icon  */}
         <li className="social-icon d-flex justify-content-center align-items-center">
           <a
