@@ -59,7 +59,7 @@ export const TsParticles = () => {
               enable: true,
               area: 800,
             },
-            value: 30,
+            value: 50,
           },
           shape: {
             type: "circle",
