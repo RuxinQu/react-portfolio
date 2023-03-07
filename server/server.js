@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
-const path = require('path');
+const path = require("path");
 const cors = require("cors");
+var expressStaticGzip = require("express-static-gzip");
 const { transporter, router } = require("./api/email");
 
 const port = process.env.PORT || 3001;
@@ -10,11 +11,24 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
 
+app.use(
+  expressStaticGzip(path.join(__dirname, "../client/build"), {
+    enableBrotli: true,
+    customCompressions: [
+      {
+        encodingName: "deflate",
+        fileExtension: "zz",
+      },
+    ],
+    orderPreference: ["br"],
+  })
+);
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/build")));
 }
 
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
