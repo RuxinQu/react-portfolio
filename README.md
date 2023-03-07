@@ -14,7 +14,7 @@ This is Ruxin Qu's react portfolio.
 
 View deployed link:
 
-1. [![Azure](https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://react-portfolio-rq.azurewebsites.net)
+1. [![Azure](https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://react-portfolio-rq.azurewebsites.net)(This link is no longer available because the free subscription plan has expired.)
 2. [![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://react-portfolio-rq.herokuapp.com/)
 3. https://ruxinqu.com (forward to heroku)
 
@@ -26,10 +26,10 @@ View deployed link:
 
 ## Usage
 
-1. Click the link and see my portfolio!
-2. The website is responsive to different screen sizes.
-3. User is able to send messages through the contact form.
-4. The following animation shows the website's appearance and functionality:
+1. Click on the link to view my portfolio!
+2. The website is designed to be responsive to different screen sizes.
+3. Users are able to send messages through the contact form.
+4. The following animation demonstrates the website's appearance and functionality.
 
 ![screenshot](./client/public/assets/portfolio.png)›
 
