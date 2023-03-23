@@ -43,13 +43,17 @@ export const workData = [
   },
 ];
 
-export const frontEnd = ["React", "Bootstrap", "jQuery", "Mocha"];
-
-export const backEnd = [
+export const skill = [
+  "React",
+  "Bootstrap",
+  "jQuery",
+  "Mocha",
   "Node",
   "Express",
   "MySQL",
   "MongoDB",
   "GraphQL",
   "REST APIs",
+  "AWS",
+  "GCP",
 ];

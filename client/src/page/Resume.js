@@ -1,5 +1,5 @@
 import React from "react";
-import { frontEnd, backEnd } from "../data";
+import { skill } from "../data";
 import { AiOutlineDownload } from "react-icons/ai";
 
 const skillStyle = {
@@ -21,30 +21,14 @@ export default function Resume() {
           Download Resume
         </button>
       </div>
-      <h3 className="text-white text-center my-4 ">Skills</h3>
+      <h3 className="text-white text-center my-5 ">Skills</h3>
       {/* frontEnd skill section */}
-      <h5 className="text-center text-white">Front-end:</h5>
       <div
         className="row d-flex justify-content-center m-auto"
         style={skillStyle}
       >
         {/* mapping through the frontEnd array */}
-        {frontEnd.map((skill) => {
-          return (
-            <div className="col-12 col-md-6 col-lg-3" key={skill}>
-              <h6 className="skill text-center p-3 round">{skill}</h6>
-            </div>
-          );
-        })}
-      </div>
-      {/* backend skill section */}
-      <h5 className="text-center text-white mt-4">Back-end:</h5>
-      <div
-        className="row d-flex justify-content-center m-auto"
-        style={skillStyle}
-      >
-        {/* mapping through the backEnd array */}
-        {backEnd.map((skill) => {
+        {skill.map((skill) => {
           return (
             <div className="col-12 col-md-6 col-lg-3" key={skill}>
               <h6 className="skill text-center p-3 round">{skill}</h6>
