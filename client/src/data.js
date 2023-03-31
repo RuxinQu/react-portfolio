@@ -28,18 +28,18 @@ export const workData = [
     repo: "https://github.com/RuxinQu/my-blog",
   },
   {
+    title: "AWS Thought",
+    img: "./assets/aws-thought.png",
+    alt: "aws-thought",
+    page: "http://ec2-35-162-91-240.us-west-2.compute.amazonaws.com/",
+    repo: "https://github.com/RuxinQu/aws-thought",
+  },
+  {
     title: "Weather Dashboard",
     img: "./assets/weather-dashboard.png",
     alt: "weather-dashboard",
     page: "https://ruxinqu.github.io/weather-dashboard/",
     repo: "https://github.com/RuxinQu/weather-dashboard",
-  },
-  {
-    title: "Employee Tracker",
-    img: "./assets/employee-tracker.png",
-    alt: "employee-tracker",
-    page: "https://drive.google.com/file/d/1oX6RJRk-lzV2KR__T3LWggxwrKwuRMKb/view",
-    repo: "https://github.com/RuxinQu/employee-tracker",
   },
 ];
 
