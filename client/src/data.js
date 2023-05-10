@@ -5,6 +5,8 @@ export const workData = [
     alt: "raining-cats-and-dogs",
     page: "https://raining-dog.herokuapp.com/",
     repo: "https://github.com/RuxinQu/Raining-Cats-and-Dogs",
+    Technologies:
+      "Google Cloud Storage, MySQL, Express, Handlebars, Heroku, Mocha, Chai, Supertest, Bcrypt, MVC",
   },
   {
     title: "Safe Harbor Pet Shelter",
@@ -12,6 +14,8 @@ export const workData = [
     alt: "safe-harbor-pet-shelter",
     page: "https://safe-harbor-pet-shelter.herokuapp.com",
     repo: "https://github.com/RuxinQu/safe-harbor-pet-shelter",
+    Technologies:
+      "MongoDB, Mongoose(ODM), Express, React, Node, Amazon S3, Material UI, Gmail API, dotenv",
   },
   {
     title: "FitHub",
@@ -19,6 +23,8 @@ export const workData = [
     alt: "fithub",
     page: "https://fithub-fitness.herokuapp.com",
     repo: "https://github.com/RuxinQu/fithub",
+    Technologies:
+      "MongoDB, Express, React, Redux, Node, Apollo server, GraphQL, JWT, IndexedDB, Material UI, Heroku",
   },
   {
     title: "My Blog",
@@ -26,6 +32,8 @@ export const workData = [
     alt: "my-blog",
     page: "https://my-blog-4001.herokuapp.com/",
     repo: "https://github.com/RuxinQu/my-blog",
+    Technologies:
+      "MySQL, Sequelize(ORM), Express, Handlebars, Heroku, Bcrypt, MVC",
   },
   {
     title: "AWS Thought",
@@ -33,6 +41,8 @@ export const workData = [
     alt: "aws-thought",
     page: "http://ec2-35-162-91-240.us-west-2.compute.amazonaws.com/",
     repo: "https://github.com/RuxinQu/aws-thought",
+    Technologies:
+      "Amazon EC2, Amazon DynamoDB, Amazon S3, React, Express, IaaS",
   },
   {
     title: "Weather Dashboard",
@@ -40,6 +50,7 @@ export const workData = [
     alt: "weather-dashboard",
     page: "https://ruxinqu.github.io/weather-dashboard/",
     repo: "https://github.com/RuxinQu/weather-dashboard",
+    Technologies: "OpenWeather API, jQuery, Bootstrap, Luxon",
   },
 ];
 
