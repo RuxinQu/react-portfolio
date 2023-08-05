@@ -18,13 +18,22 @@ export const workData = [
       "MongoDB, Mongoose(ODM), Express, React, Node, Amazon S3, Material UI, Gmail API, dotenv",
   },
   {
-    title: "FitHub",
+    title: "MERN FitHub",
     img: "./assets/fithub.png",
     alt: "fithub",
     page: "https://fithub-fitness.herokuapp.com",
     repo: "https://github.com/RuxinQu/fithub",
     Technologies:
       "MongoDB, Express, React, Redux, Node, Apollo server, GraphQL, JWT, IndexedDB, Material UI, Heroku",
+  },
+  {
+    title: "Dog Tinder",
+    img: "./assets/dog-tinder.png",
+    alt: "dog-tinder",
+    page: "https://dog-tinder-rq.netlify.app",
+    repo: "https://github.com/RuxinQu/dog-tinder",
+    Technologies:
+      "React, MongoDB, Express, JSON Web Token, Cookie, Amazon S3, Netlify, Material UI",
   },
   {
     title: "My Blog",
@@ -43,14 +52,6 @@ export const workData = [
     repo: "https://github.com/RuxinQu/aws-thought",
     Technologies:
       "Amazon EC2, Amazon DynamoDB, Amazon S3, React, Express, IaaS",
-  },
-  {
-    title: "Weather Dashboard",
-    img: "./assets/weather-dashboard.png",
-    alt: "weather-dashboard",
-    page: "https://ruxinqu.github.io/weather-dashboard/",
-    repo: "https://github.com/RuxinQu/weather-dashboard",
-    Technologies: "OpenWeather API, jQuery, Bootstrap, Luxon",
   },
 ];
 
