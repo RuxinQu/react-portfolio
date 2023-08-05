@@ -12,7 +12,7 @@ export const workData = [
     title: "Safe Harbor Pet Shelter",
     img: "./assets/safe-harbor-pet-shelter.png",
     alt: "safe-harbor-pet-shelter",
-    page: "https://safe-harbor-pet-shelter.herokuapp.com",
+    page: "https://safe-harbor-pet-shelter.netlify.app",
     repo: "https://github.com/RuxinQu/safe-harbor-pet-shelter",
     Technologies:
       "MongoDB, Mongoose(ODM), Express, React, Node, Amazon S3, Material UI, Gmail API, dotenv",

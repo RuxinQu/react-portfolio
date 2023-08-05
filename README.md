@@ -5,18 +5,18 @@
 ![express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Gmail](https://img.shields.io/badge/Gmail%20Api-D14836?style=for-the-badge&logo=gmail&logoColor=white)
-
-[![Nodemailer](./client/public/assets/nm_logo.png)](https://nodemailer.com/about/)
+![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+[![Nodemailer](./public/assets/nm_logo.png)](https://nodemailer.com/about/)
 
 ## Description
 
-This is Ruxin Qu's react portfolio.
+This is client side of Ruxin Qu's react portfolio.
 
 View deployed link:
 
 1. [![Azure](https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://react-portfolio-rq.azurewebsites.net)(This link is no longer available because the free subscription plan has expired.)
-2. [![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://react-portfolio-rq.herokuapp.com/)
-3. https://ruxinqu.com (forward to heroku)
+2. [![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://ruxinqu.netlify.app)
+3. http://ruxinqu.com (forward to Netlify)
 
 ## Installation
 
@@ -31,7 +31,7 @@ View deployed link:
 3. Users are able to send messages through the contact form.
 4. The following animation demonstrates the website's appearance and functionality.
 
-![screenshot](./client/public/assets/portfolio.png)›
+![screenshot](./public/assets/portfolio.png)›
 
 ## Technologies Used
 
