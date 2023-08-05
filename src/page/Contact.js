@@ -21,14 +21,17 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(formState),
-      });
+      const response = await fetch(
+        "https://react-portfolio-rq.herokuapp.com/send",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(formState),
+        }
+      );
       if (response.ok) {
         setFormState({ name: "", email: "", message: "" });
         toast.success("Form submitted!", {
