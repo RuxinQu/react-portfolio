@@ -2,7 +2,6 @@
   "name": "reactportfolio",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://react-portfolio-rq.herokuapp.com/",
   "dependencies": {
     "@popmotion/popcorn": "^0.4.4",
     "@testing-library/jest-dom": "^5.16.5",
