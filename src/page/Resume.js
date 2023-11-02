@@ -1,6 +1,7 @@
 import React from "react";
 import { skill } from "../data";
 import { AiOutlineDownload } from "react-icons/ai";
+import Box from "@mui/material/Box";
 
 const skillStyle = {
   width: "80%",
@@ -8,7 +9,10 @@ const skillStyle = {
 
 export default function Resume() {
   return (
-    <div id="resume" className="container-fluid">
+    <Box
+      id="resume"
+      sx={{ padding: { xs: "20px 0", md: "30px 0", lg: "50px 0" } }}
+    >
       {/* download button */}
       <div className="row d-flex justify-content-center ">
         <button
@@ -21,7 +25,16 @@ export default function Resume() {
           Download Resume
         </button>
       </div>
-      <h3 className="text-white text-center my-4 ">Skills</h3>
+      <h3
+        style={{
+          textAlign: "center",
+          padding: "2rem 0",
+          fontSize: "1.5rem",
+          color: "#dbdbdb",
+        }}
+      >
+        Skills
+      </h3>
       {/* frontEnd skill section */}
       <div
         className="row d-flex justify-content-center m-auto"
@@ -36,8 +49,17 @@ export default function Resume() {
           );
         })}
       </div>
-      <h3 className="text-white text-center my-4 ">Certifications</h3>
-      <div className="badges text-center">
+      <h3
+        style={{
+          textAlign: "center",
+          padding: "2rem 0",
+          fontSize: "1.5rem",
+          color: "#dbdbdb",
+        }}
+      >
+        Certifications
+      </h3>
+      <Box className="badges" display={"flex"} justifyContent={"center"}>
         <img
           src="./assets/aws-certified-developer-associate.png"
           alt="aws-certified-developer-associate-badge"
@@ -47,7 +69,16 @@ export default function Resume() {
             )
           }
         />
-      </div>
-    </div>
+        <img
+          src="./assets/aws-certified-solutions-architect-associate.png"
+          alt="aws-certified-solutions-architect-associate-badge"
+          onClick={() =>
+            window.open(
+              "https://www.credly.com/badges/f9139a78-a142-4216-98f1-665e66e23322/public_url"
+            )
+          }
+        />
+      </Box>
+    </Box>
   );
 }

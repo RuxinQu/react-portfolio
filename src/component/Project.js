@@ -11,6 +11,7 @@ export const Project = ({ work }) => {
       flexDirection={"column"}
       justifyContent={"space-between"}
       sx={{ minHeight: { sm: 550 } }}
+      color={"#bbb"}
       p={3}
     >
       <Box>
@@ -21,8 +22,8 @@ export const Project = ({ work }) => {
         </h6>
         <LazyLoadImage width="100%" src={work.img} alt={work.alt} />
         <div style={{ padding: "10px 0" }}>
-          <p style={{ marginBottom: "0.5rem" }}>{work.description}</p>
-          <p style={{ marginBottom: "0.5rem" }}>
+          <p style={{ marginBottom: "1rem" }}>{work.description}</p>
+          <p style={{ marginBottom: "1rem" }}>
             Tech Stack: {work.technologies}
           </p>
         </div>

@@ -111,6 +111,10 @@ article.react-activity-calendar {
 .badges > img {
   width: 150px;
   height: 150px;
+  margin: 0 10px;
+}
+.badges > img:hover {
+  cursor: pointer;
 }
 
 /* ---------footer section--------- */

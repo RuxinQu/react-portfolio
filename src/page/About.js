@@ -27,7 +27,10 @@ export default function About() {
 
   return (
     <Box id="about-me">
-      <CustomBox flexDirection={isSmallScreen ? "column" : "row"}>
+      <CustomBox
+        flexDirection={isSmallScreen ? "column" : "row"}
+        sx={{ marginTop: { xs: "20px", md: "30px", lg: "50px" } }}
+      >
         <img
           src="/assets/photo.png"
           alt="Ruxin smiling"
