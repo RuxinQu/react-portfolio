@@ -36,7 +36,7 @@ export const Header = () => {
       className={colorChange ? "navbar colorChange" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex text-white">
+        <Navbar.Brand href="/" style={{ color: "#fff", padding: "10px 0" }}>
           Ruxin Qu
         </Navbar.Brand>
         <Navbar.Toggle
