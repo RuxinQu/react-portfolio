@@ -5,6 +5,7 @@ import { ContactForm } from "../component/ContactForm";
 
 export default function Contact() {
   // handle input controlled form
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -20,6 +21,7 @@ export default function Contact() {
   // after submit the form, all input field is set to be blank, a toast will show on the top of the page
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     try {
       const response = await fetch(
         "https://react-portfolio-rq.herokuapp.com/send",
@@ -35,7 +37,7 @@ export default function Contact() {
       if (response.ok) {
         setFormState({ name: "", email: "", message: "" });
         toast.success("Form submitted!", {
-          position: "top-center",
+          position: "bottom-right",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -46,7 +48,7 @@ export default function Contact() {
         });
       } else {
         toast.error("Fail to submit the form!", {
-          position: "top-center",
+          position: "bottom-right",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -56,6 +58,7 @@ export default function Contact() {
           theme: "colored",
         });
       }
+      setIsSubmitting(false);
     } catch (err) {
       console.log(err);
     }
@@ -73,7 +76,7 @@ export default function Contact() {
   };
   return (
     <div id="contact" className="container-fluid">
-      <div className="row d-flex justify-content-center align-items-center pt-5">
+      <div className="row d-flex justify-content-center pt-5">
         <SeattleMap />
         <ContactForm
           formState={formState}
@@ -81,6 +84,7 @@ export default function Contact() {
           handleChange={handleChange}
           handleSubmit={handleSubmit}
           handleError={handleError}
+          isSubmitting={isSubmitting}
         />
       </div>
     </div>

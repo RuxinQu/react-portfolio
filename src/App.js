@@ -7,25 +7,35 @@ import Contact from "./page/Contact";
 import About from "./page/About";
 import Work from "./page/Work";
 import Resume from "./page/Resume";
+
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./App.css";
 import "./index.css";
 
+const theme = createTheme({
+  palette: {
+    divider: "#9ca3af",
+  },
+});
+
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Preloader />
-        <Header />
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/resume" element={<Resume />} />
-        </Routes>
-        <Footer />
-      </Router>
-      <TsParticles />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Router>
+          <Preloader />
+          <Header />
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+          <Footer />
+        </Router>
+        <TsParticles />
+      </div>
+    </ThemeProvider>
   );
 }
 

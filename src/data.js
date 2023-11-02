@@ -15,7 +15,7 @@ export const workData = [
     page: "https://safe-harbor-pet-shelter.netlify.app",
     repo: "https://github.com/RuxinQu/safe-harbor-pet-shelter",
     Technologies:
-      "MongoDB, Mongoose(ODM), Express, React, Node, Amazon S3, Material UI, Gmail API, dotenv",
+      "MongoDB, Express, React, Node, Amazon S3, Material UI, Gmail API, dotenv",
   },
   {
     title: "MERN FitHub",
@@ -41,8 +41,7 @@ export const workData = [
     alt: "my-blog",
     page: "https://my-blog-4001.herokuapp.com/",
     repo: "https://github.com/RuxinQu/my-blog",
-    Technologies:
-      "MySQL, Sequelize(ORM), Express, Handlebars, Heroku, Bcrypt, MVC",
+    Technologies: "MySQL, Express, Handlebars, Heroku, Bcrypt",
   },
   {
     title: "AWS Thought",
@@ -56,16 +55,16 @@ export const workData = [
 ];
 
 export const skill = [
+  "MongoDB",
+  "Express",
   "React",
-  "Bootstrap",
+  "Node",
+  "MySQL",
+  "Material UI",
   "jQuery",
   "Mocha",
-  "Node",
-  "Express",
-  "MySQL",
-  "MongoDB",
   "GraphQL",
   "REST APIs",
   "AWS",
-  "GCP",
+  "Google Cloud",
 ];
