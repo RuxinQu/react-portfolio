@@ -33,7 +33,7 @@ export default function About() {
           alt="Ruxin smiling"
           style={{ maxWidth: 300 }}
         />
-        <Box sx={{ width: { xs: "100%", md: "70%", lg: 800 } }}>
+        <Box sx={{ width: { xs: "100%", md: "70%", lg: 1000 } }}>
           <h1
             style={{
               color: "#dbdbdb",
