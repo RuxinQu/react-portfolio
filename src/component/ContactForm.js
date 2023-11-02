@@ -1,4 +1,5 @@
 import React from "react";
+import ReactLoading from "react-loading";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -12,6 +13,7 @@ export const ContactForm = ({
   handleError,
   handleSubmit,
   error,
+  isSubmitting,
 }) => {
   return (
     <form style={formStyle} onSubmit={handleSubmit} className="contact-form">
@@ -59,12 +61,20 @@ export const ContactForm = ({
       </div>
 
       <p className="text-warning"> {error ? error : <br />} </p>
+      {isSubmitting ? (
+        <ReactLoading type={"spin"} color="#fff" width={50} />
+      ) : (
+        <button
+          type="submit"
+          className="btn btn-primary"
+          disabled={isSubmitting}
+        >
+          Submit
+        </button>
+      )}
 
-      <button type="submit" className="btn btn-primary">
-        Submit
-      </button>
       <ToastContainer
-        position="top-center"
+        position="bottom-center"
         autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}
@@ -73,7 +83,7 @@ export const ContactForm = ({
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="light"
+        theme="colored"
       />
     </form>
   );

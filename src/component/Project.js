@@ -13,9 +13,9 @@ export const Project = ({ work }) => {
 
   return (
     <div
-      className="col-11 col-md-5 col-lg-3 m-1 py-2 project"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      className="col-11 col-md-6 m-1 py-2 project"
+      // onMouseEnter={handleMouseEnter}
+      // onMouseLeave={handleMouseLeave}
     >
       <h6 className="text-center mb-0 mt-2">{work.title}</h6>
       {!isHovered && (
