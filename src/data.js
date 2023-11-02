@@ -1,39 +1,48 @@
 export const workData = [
   {
-    title: "Raining Cats and Dogs",
-    img: "./assets/raining-cats-and-dogs.png",
-    alt: "raining-cats-and-dogs",
-    page: "https://raining-dog.herokuapp.com/",
-    repo: "https://github.com/RuxinQu/Raining-Cats-and-Dogs",
-    Technologies:
-      "Google Cloud Storage, MySQL, Express, Handlebars, Heroku, Mocha, Chai, Supertest, Bcrypt, MVC",
+    title: "Dog Tinder",
+    img: "./assets/dog-tinder.png",
+    alt: "dog-tinder",
+    page: "https://dog-tinder-rq.netlify.app",
+    repo: "https://github.com/RuxinQu/dog-tinder",
+    description:
+      "A dog owner's social app. Users can swipe the card to match other users and start a private chat.",
+    technologies:
+      "React, MongoDB, Express, Node, JWT, Cookie, Amazon S3, Netlify, Material UI",
   },
+
   {
     title: "Safe Harbor Pet Shelter",
     img: "./assets/safe-harbor-pet-shelter.png",
     alt: "safe-harbor-pet-shelter",
     page: "https://safe-harbor-pet-shelter.netlify.app",
     repo: "https://github.com/RuxinQu/safe-harbor-pet-shelter",
-    Technologies:
+    description:
+      "A MERN app created for Safe Harbor Pet Shelter, featuring an admin page for pet data management.",
+    technologies:
       "MongoDB, Express, React, Node, Amazon S3, Material UI, Gmail API, dotenv",
   },
   {
-    title: "MERN FitHub",
+    title: "FitHub",
     img: "./assets/fithub.png",
     alt: "fithub",
     page: "https://fithub-fitness.herokuapp.com",
     repo: "https://github.com/RuxinQu/fithub",
-    Technologies:
-      "MongoDB, Express, React, Redux, Node, Apollo server, GraphQL, JWT, IndexedDB, Material UI, Heroku",
+    description:
+      "A MERN app for discovering and saving workouts. This is a group project of 4 members.",
+    technologies:
+      "MongoDB, Express, React, Redux, Apollo server, GraphQL, JWT, IndexedDB, ExerciseDB API",
   },
   {
-    title: "Dog Tinder",
-    img: "./assets/dog-tinder.png",
-    alt: "dog-tinder",
-    page: "https://dog-tinder-rq.netlify.app",
-    repo: "https://github.com/RuxinQu/dog-tinder",
-    Technologies:
-      "React, MongoDB, Express, JSON Web Token, Cookie, Amazon S3, Netlify, Material UI",
+    title: "Raining Cats and Dogs",
+    img: "./assets/raining-cats-and-dogs.png",
+    alt: "raining-cats-and-dogs",
+    page: "https://raining-dog.herokuapp.com/",
+    repo: "https://github.com/RuxinQu/Raining-Cats-and-Dogs",
+    description:
+      "A 4-member group project for pet boarding services, enabling users to book accommodations for their pets.",
+    technologies:
+      "Google Cloud Storage, MySQL, Express, Handlebars, Heroku, Mocha, Chai, Bcrypt, MVC",
   },
   {
     title: "My Blog",
@@ -41,7 +50,8 @@ export const workData = [
     alt: "my-blog",
     page: "https://my-blog-4001.herokuapp.com/",
     repo: "https://github.com/RuxinQu/my-blog",
-    Technologies: "MySQL, Express, Handlebars, Heroku, Bcrypt",
+    description: "A blog platform with user accounts, posts, and comments.",
+    technologies: "MySQL, Express, Handlebars, Heroku, Bcrypt",
   },
   {
     title: "AWS Thought",
@@ -49,8 +59,9 @@ export const workData = [
     alt: "aws-thought",
     page: "http://ec2-35-162-91-240.us-west-2.compute.amazonaws.com/",
     repo: "https://github.com/RuxinQu/aws-thought",
-    Technologies:
-      "Amazon EC2, Amazon DynamoDB, Amazon S3, React, Express, IaaS",
+    description:
+      "A blog website powered by AWS where users can post thoughts and images.",
+    technologies: "Amazon EC2, Amazon DynamoDB, Amazon S3, React, Express",
   },
 ];
 

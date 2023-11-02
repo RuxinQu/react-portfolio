@@ -12,11 +12,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./App.css";
 import "./index.css";
 
-const theme = createTheme({
-  palette: {
-    divider: "#9ca3af",
-  },
-});
+const theme = createTheme();
 
 function App() {
   return (

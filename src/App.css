@@ -33,7 +33,7 @@ a:hover {
 .navbar {
   z-index: 10;
   background-color: transparent;
-  height: 12dvh;
+  height: 11dvh;
 }
 
 .navbar.colorChange {
@@ -95,8 +95,8 @@ article.react-activity-calendar {
 .project:hover {
   transform: scale(1.01);
   transition: ease-in;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #dbdbdb;
+  border: 1px solid #dbdbdb;
   box-shadow: 0 0 20px var(--neon-orange);
 }
 
@@ -105,7 +105,7 @@ article.react-activity-calendar {
 }
 
 .project a:hover {
-  color: #fff;
+  color: #dbdbdb;
 }
 
 .badges > img {
