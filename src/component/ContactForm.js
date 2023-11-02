@@ -18,7 +18,16 @@ export const ContactForm = ({
   return (
     <form style={formStyle} onSubmit={handleSubmit} className="contact-form">
       {/* contact form. add event listener for all the input fields and the submit button */}
-      <h3 className="text-white text-center">Contact Me</h3>
+      <h2
+        style={{
+          textAlign: "center",
+          marginBottom: "1.5rem",
+          fontSize: "1.5rem",
+          color: "#dbdbdb",
+        }}
+      >
+        Contact Me
+      </h2>
       <div className="form-group">
         <label>Name</label>
         <input
