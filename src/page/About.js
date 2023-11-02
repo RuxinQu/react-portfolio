@@ -1,25 +1,24 @@
-// import Avatar from "avataaars2";
 import GitHubCalendar from "react-github-calendar";
-import { Box } from "@mui/system";
-import Divider from "@mui/material/Divider";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { styled } from "@mui/system";
+import { Box } from "@mui/system";
 
 const CustomBox = styled(Box)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
-  // sx={{width: { xs: "90%", md: "80%", lg: 1200 }}} ,
-  padding: "15dvh 0",
   margin: "0 auto",
-  [theme.breakpoints.down("xs")]: {
-    width: "90%", // For screens smaller than 'md', set width to 100%
+  [theme.breakpoints.up("xs")]: {
+    width: "90%",
+    padding: "20px 0",
   },
   [theme.breakpoints.up("md")]: {
-    width: "80%", // For screens 'md' and larger, set width to 50%
+    width: "80%",
+    padding: "30px 0",
   },
   [theme.breakpoints.up("lg")]: {
-    width: 1200, // For screens 'md' and larger, set width to 50%
+    width: 1100,
+    padding: "50px 0",
   },
 }));
 
@@ -65,14 +64,6 @@ export default function About() {
         </Box>
       </CustomBox>
 
-      {/* <Divider
-        sx={{
-          borderBottomWidth: 1,
-          mx: "auto",
-          width: 200,
-        }}
-      /> */}
-
       <CustomBox flexDirection={isSmallScreen ? "column" : "row"}>
         <Box
           sx={{
@@ -89,12 +80,14 @@ export default function About() {
           >
             From Lab to Laptop
           </h5>
-          When I was in graduate school, I realized I had a passion for coding.
-          But I knew that changing careers is never an easy thing. Later, I
-          moved to the US. After a long period of thinking and trying
-          self-taught JavaScript, I finally decided that web development was the
-          right path for me. I started to pursue my career in web development
-          and attended the UW coding bootcamp.
+          <p>
+            When I was in graduate school, I realized I had a passion for
+            coding. But I knew that changing careers is never an easy thing.
+            Later, I moved to the US. After a long period of thinking and trying
+            self-taught JavaScript, I finally decided that web development was
+            the right path for me. I started to pursue my career in web
+            development and attended the UW coding bootcamp.
+          </p>
         </Box>
 
         <img
@@ -133,7 +126,12 @@ export default function About() {
           </ul>
         </Box>
       </CustomBox>
-      <Box display={"flex"} justifyContent={"center"}>
+
+      <Box
+        display={"flex"}
+        justifyContent={"center"}
+        sx={{ width: "90%", mx: "auto" }}
+      >
         <GitHubCalendar
           username="RuxinQu"
           blockSize={15}
