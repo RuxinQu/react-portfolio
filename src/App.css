@@ -1,5 +1,5 @@
 .App {
-  color: #9ca3af;
+  color: #b4bbc6;
   min-height: 100dvh;
   background-image: linear-gradient(#050871 0%, #02010c 97.5%);
 }
@@ -81,10 +81,6 @@ a:hover {
   margin-top: 5px !important;
   margin-bottom: 5px !important;
 }
-/* ---------about-me section--------- */
-article.react-activity-calendar {
-  margin-top: 7rem;
-}
 
 /* ---------project section--------- */
 .project,
@@ -105,7 +101,7 @@ article.react-activity-calendar {
 }
 
 .project a:hover {
-  color: #dbdbdb;
+  color: #fe953e;
 }
 
 .badges > img {
@@ -115,6 +111,27 @@ article.react-activity-calendar {
 }
 .badges > img:hover {
   cursor: pointer;
+}
+
+/* ---------contact section--------- */
+.pic-of-seattle::before {
+  content: "";
+  position: absolute;
+  background-image: url(./../public/assets/pic-of-seattle.png);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  /* top: 50px; */
+  opacity: 0.5;
+}
+
+.contact-form {
+  background-color: #000000c1;
+  padding: 1rem;
+  border-radius: 5px;
+  position: relative;
 }
 
 /* ---------footer section--------- */
@@ -141,12 +158,6 @@ article.react-activity-calendar {
   }
   .bg-menu {
     background-color: var(--bg-navbar);
-  }
-  article.react-activity-calendar {
-    margin-top: 1.5rem;
-  }
-  .contact-form {
-    margin-top: 3rem;
   }
 }
 

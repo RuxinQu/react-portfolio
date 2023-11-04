@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import {
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-  AiOutlineContacts,
-} from "react-icons/ai";
-import { CgFileDocument } from "react-icons/cg";
 
+import LaptopIcon from "@mui/icons-material/Laptop";
+import Face4Icon from "@mui/icons-material/Face4";
+import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
+import TextSnippetIcon from "@mui/icons-material/TextSnippet";
 const iconStyle = {
   margin: "0 5 3 0",
 };
@@ -58,7 +56,7 @@ export const Header = () => {
                 href="/"
                 onClick={handleScrollToTop}
               >
-                <AiOutlineUser style={iconStyle} />
+                <Face4Icon style={iconStyle} />
                 About
               </Nav.Link>
             </Nav.Item>
@@ -70,7 +68,7 @@ export const Header = () => {
                 href="/work"
                 onClick={handleScrollToTop}
               >
-                <AiOutlineFundProjectionScreen style={iconStyle} />
+                <LaptopIcon style={iconStyle} />
                 Work
               </Nav.Link>
             </Nav.Item>
@@ -82,7 +80,7 @@ export const Header = () => {
                 href="/contact"
                 onClick={handleScrollToTop}
               >
-                <AiOutlineContacts style={iconStyle} />
+                <PermContactCalendarIcon style={iconStyle} />
                 Contact
               </Nav.Link>
             </Nav.Item>
@@ -94,7 +92,7 @@ export const Header = () => {
                 href="/resume"
                 onClick={handleScrollToTop}
               >
-                <CgFileDocument style={iconStyle} />
+                <TextSnippetIcon style={iconStyle} />
                 Resume
               </Nav.Link>
             </Nav.Item>

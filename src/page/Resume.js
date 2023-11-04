@@ -1,6 +1,6 @@
 import React from "react";
 import { skill } from "../data";
-import { AiOutlineDownload } from "react-icons/ai";
+import DownloadIcon from "@mui/icons-material/Download";
 import Box from "@mui/material/Box";
 
 const skillStyle = {
@@ -21,7 +21,7 @@ export default function Resume() {
           type="button"
           className="btn btn-primary mt-2"
         >
-          <AiOutlineDownload style={{ marginRight: 5 }} />
+          <DownloadIcon style={{ marginRight: 5 }} />
           Download Resume
         </button>
       </div>

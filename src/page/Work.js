@@ -30,7 +30,7 @@ export default function Work() {
           {/* map through the workData and each one renders a Project component */}
           {workData.map((work) => {
             return (
-              <Grid item xs={12} md={6}>
+              <Grid item xs={12} md={6} key={work.title}>
                 <Project work={work} key={work.title} />
               </Grid>
             );

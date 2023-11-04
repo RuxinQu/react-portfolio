@@ -12,7 +12,14 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./App.css";
 import "./index.css";
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    mode: "dark",
+    primary: {
+      main: "#f17105",
+    },
+  },
+});
 
 function App() {
   return (
