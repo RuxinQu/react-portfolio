@@ -3,6 +3,7 @@
 ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![react-router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)
 ![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Gmail](https://img.shields.io/badge/Gmail%20Api-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 ![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
@@ -12,11 +13,7 @@
 
 This is client side of Ruxin Qu's react portfolio.
 
-View deployed link:
-
-1. [![Azure](https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://react-portfolio-rq.azurewebsites.net)(This link is no longer available because the free subscription plan has expired.)
-2. [![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://ruxinqu.netlify.app)
-3. http://ruxinqu.com (forward to Netlify)
+View deployed link: http://portfolio.ruxinqu.net
 
 ## Installation
 
@@ -32,20 +29,3 @@ View deployed link:
 4. The following animation demonstrates the website's appearance and functionality.
 
 ![screenshot](./public/assets/portfolio.png)›
-
-## Technologies Used
-
-- [Nodemailer](https://nodemailer.com/about/)
-- [Avataaars2](https://www.npmjs.com/package/avataaars2)
-- [React-Icons](https://react-icons.github.io/react-icons/)
-- [React-toastify](https://www.npmjs.com/package/react-toastify)
-- [React-Bootstrap](https://react-bootstrap.github.io)
-- [React-Github-Calendar](http://react-component.github.io/calendar/)
-- [Bootstrap](https://getbootstrap.com)
-- [gh-pages](https://www.npmjs.com/package/gh-pages)
-- [SVG-loaders](https://github.com/SamHerbert/SVG-Loaders)
-- [React-toastify](https://www.npmjs.com/package/react-toastify)
-
-## Contact Me
-
-Email: ruxinqu@gmail.com
