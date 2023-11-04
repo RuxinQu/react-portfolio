@@ -1,7 +1,7 @@
 import GitHubCalendar from "react-github-calendar";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { styled } from "@mui/system";
-import { Box } from "@mui/system";
+import Box from "@mui/system/Box";
 
 const CustomBox = styled(Box)(({ theme }) => ({
   display: "flex",
@@ -32,8 +32,8 @@ export default function About() {
         sx={{ marginTop: { xs: "20px", md: "30px", lg: "50px" } }}
       >
         <img
-          src="/assets/photo.png"
-          alt="Ruxin smiling"
+          src="/assets/profile.png"
+          alt="Ruxin in front of the laptop"
           style={{ maxWidth: 300 }}
         />
         <Box sx={{ width: { xs: "100%", md: "70%", lg: 1000 } }}>
@@ -66,7 +66,6 @@ export default function About() {
           </ul>
         </Box>
       </CustomBox>
-
       <CustomBox flexDirection={isSmallScreen ? "column" : "row"}>
         <Box
           sx={{
@@ -99,7 +98,6 @@ export default function About() {
           style={{ maxWidth: 400 }}
         />
       </CustomBox>
-
       <CustomBox flexDirection={isSmallScreen ? "column" : "row"}>
         <img
           src="/assets/drawing&dog.png"
@@ -130,11 +128,7 @@ export default function About() {
         </Box>
       </CustomBox>
 
-      <Box
-        display={"flex"}
-        justifyContent={"center"}
-        sx={{ width: "90%", mx: "auto" }}
-      >
+      <CustomBox>
         <GitHubCalendar
           username="RuxinQu"
           blockSize={15}
@@ -142,7 +136,7 @@ export default function About() {
           color="#f17105"
           fontSize={16}
         />
-      </Box>
+      </CustomBox>
     </Box>
   );
 }
