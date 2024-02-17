@@ -84,11 +84,11 @@ export default function About() {
           </h5>
           <p>
             When I was in graduate school, I realized I had a passion for
-            coding. But I know that changing careers is never easy. Later, I
-            moved to the United States. After a long time of thinking and trying
-            to teach myself JavaScript, I finally decided that web development
-            was the path for me. I started to pursue my career in web
-            development and attended the University of Washington Coding
+            coding, but I know that changing careers is never easy. Later, I
+            moved to the United States. After a long time of struggling alone
+            and trying to teach myself JavaScript, I finally decided that web
+            development was the path for me. I started to pursue my career in
+            web development and attended the University of Washington Coding
             Bootcamp.
           </p>
         </Box>

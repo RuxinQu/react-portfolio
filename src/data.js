@@ -23,6 +23,16 @@ export const workData = [
       "MongoDB, Express, React, Node, Amazon S3, Material UI, Gmail API, dotenv",
   },
   {
+    title: "Cloud Thoughts",
+    img: "./assets/cloud-thoughts.png",
+    alt: "cloud-thought",
+    page: "http://20.29.208.6",
+    repo: "https://github.com/RuxinQu/cloud-thoughts",
+    description: "A blog website with a pipeline implemented for CI/CD.",
+    technologies:
+      "Github Action, Azure Virtual Machine, Amazon DynamoDB, Amazon S3, React, Express",
+  },
+  {
     title: "FitHub",
     img: "./assets/fithub.png",
     alt: "fithub",
@@ -53,29 +63,23 @@ export const workData = [
     description: "A blog platform with user accounts, posts, and comments.",
     technologies: "MySQL, Express, Handlebars, Heroku, Bcrypt",
   },
-  {
-    title: "AWS Thought",
-    img: "./assets/aws-thought.png",
-    alt: "aws-thought",
-    page: "http://ec2-35-162-91-240.us-west-2.compute.amazonaws.com/",
-    repo: "https://github.com/RuxinQu/aws-thought",
-    description:
-      "A blog website powered by AWS where users can post thoughts and images.",
-    technologies: "Amazon EC2, Amazon DynamoDB, Amazon S3, React, Express",
-  },
 ];
 
 export const skill = [
   "MongoDB",
+  "MySQL",
   "Express",
   "React",
+  "Redux",
   "Node",
-  "MySQL",
   "Material UI",
+  "Bootstrap",
   "jQuery",
   "Mocha",
   "GraphQL",
   "REST APIs",
   "AWS",
-  "Google Cloud",
+  "Google Cloud Storage",
+  "Azure",
+  "Github Action",
 ];
