@@ -48,15 +48,8 @@ export default function About() {
           </h1>
           <ul style={{ lineHeight: "2rem" }}>
             <li>
-              Full Stack Web Developer with a passion to write{" "}
-              <span style={{ color: "#f17105", fontWeight: "bold" }}>
-                clean
-              </span>{" "}
-              and{" "}
-              <span style={{ color: "#f17105", fontWeight: "bold" }}>
-                maintainable
-              </span>{" "}
-              code.
+              Full Stack Web Developer with a passion to write clean and
+              maintainable code.
             </li>
             <li>
               Graduated from Full Stack Coding Bootcamp through University of
@@ -83,13 +76,10 @@ export default function About() {
             From Lab to Laptop
           </h5>
           <p>
-            When I was in graduate school, I realized I had a passion for
-            coding, but I know that changing careers is never easy. Later, I
-            moved to the United States. After a long time of struggling alone
-            and trying to teach myself JavaScript, I finally decided that web
-            development was the path for me. I started to pursue my career in
-            web development and attended the University of Washington Coding
-            Bootcamp.
+            During my graduate studies, I utilized software packages to tackle
+            complex computational chemistry problems. Subsequently, I discovered
+            my passion for software engineering and decided to pursue further
+            learning through a web development bootcamp.
           </p>
         </Box>
 
@@ -117,9 +107,8 @@ export default function About() {
           </h5>
           <ul style={{ lineHeight: "2rem" }}>
             <li>
-              I enjoy drawing in my free time. I find the sound of the pencil on
-              paper very relaxing. Lately, I've also been trying out oil pastels
-              for a new drawing experience.
+              I enjoy drawing and painting in my free time. I find the process
+              of creating artwork very relaxing.
             </li>
             <li>
               I have an incredibly cute golden retriever. He's very affectionate

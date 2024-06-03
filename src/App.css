@@ -25,7 +25,8 @@ a:hover {
 #about-me,
 #contact,
 #resume,
-#work {
+#work,
+#hobby {
   position: relative;
   z-index: 2;
 }

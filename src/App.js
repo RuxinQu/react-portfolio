@@ -7,6 +7,7 @@ import Contact from "./page/Contact";
 import About from "./page/About";
 import Work from "./page/Work";
 import Resume from "./page/Resume";
+import Hobby from "./page/Hobby";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./App.css";
@@ -33,6 +34,7 @@ function App() {
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="/hobby" element={<Hobby />} />
           </Routes>
           <Footer />
         </Router>

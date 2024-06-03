@@ -83,3 +83,19 @@ export const skill = [
   "Azure",
   "Github Action",
 ];
+
+export const hobbyData = [
+  { img: "./assets/hobby/dahuang-1.png", title: "dog" },
+  { img: "./assets/hobby/dahuang-2.png", title: "dog" },
+  { img: "./assets/hobby/cartoon-1.jpg", title: "cartoon" },
+  { img: "./assets/hobby/deer.jpg", title: "deer" },
+  { img: "./assets/hobby/mountain-1.png", title: "mountain" },
+  { img: "./assets/hobby/mountain-2.png", title: "mountain" },
+  { img: "./assets/hobby/hand.jpg", title: "hand" },
+  { img: "./assets/hobby/cartoon-2.png", title: "cartoon" },
+  { img: "./assets/hobby/ox.png", title: "ox" },
+  { img: "./assets/hobby/rose-1.png", title: "rose" },
+  { img: "./assets/hobby/rose-2.png", title: "rose" },
+  { img: "./assets/hobby/eye-1.png", title: "eye" },
+  { img: "./assets/hobby/eye-2.png", title: "eye" },
+];

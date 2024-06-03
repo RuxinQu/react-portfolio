@@ -41,7 +41,7 @@ export const Footer = () => {
         </li>
       </ul>
       <p className="text-center" style={{ fontSize: "0.8rem" }}>
-        Copyright &copy; 2023 RuxinQu
+        Copyright &copy; 2024 RuxinQu
       </p>
     </footer>
   );
