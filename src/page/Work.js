@@ -10,7 +10,6 @@ export default function Work() {
       id="work"
       sx={{
         padding: { xs: "20px 0", md: "30px 0", lg: "50px 0" },
-
         width: { xs: "90%", md: "80%", lg: 1000 },
         mx: "auto",
       }}

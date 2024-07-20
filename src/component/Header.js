@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
-import LaptopIcon from "@mui/icons-material/Laptop";
+// import LaptopIcon from "@mui/icons-material/Laptop";
 import Face4Icon from "@mui/icons-material/Face4";
 import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
-import TextSnippetIcon from "@mui/icons-material/TextSnippet";
-import PaletteIcon from "@mui/icons-material/Palette";
+// import TextSnippetIcon from "@mui/icons-material/TextSnippet";
 
 const iconStyle = {
   margin: "0 5 3 0",
@@ -58,17 +57,10 @@ export const Header = () => {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link as={NavLink} to="work" onClick={handleScrollToTop}>
                 <LaptopIcon style={iconStyle} />
                 Work
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              {/* set nav.link as link and add href so the collapseOnSelect can work */}
-              <Nav.Link as={NavLink} to="/hobby" onClick={handleScrollToTop}>
-                <PaletteIcon style={iconStyle} />
-                Hobby
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -76,7 +68,7 @@ export const Header = () => {
                 <TextSnippetIcon style={iconStyle} />
                 Resume
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
             <Nav.Item>
               <Nav.Link as={NavLink} to="contact" onClick={handleScrollToTop}>
                 <PermContactCalendarIcon style={iconStyle} />

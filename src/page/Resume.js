@@ -1,6 +1,5 @@
 import React from "react";
 import { skill } from "../data";
-import DownloadIcon from "@mui/icons-material/Download";
 import Box from "@mui/material/Box";
 
 const skillStyle = {
@@ -14,17 +13,7 @@ export default function Resume() {
       sx={{ padding: { xs: "20px 0", md: "30px 0", lg: "50px 0" } }}
     >
       {/* download button */}
-      <div className="row d-flex justify-content-center ">
-        <button
-          // click the button the window will open a new tab showing resume file
-          onClick={() => window.open("./assets/resume-ruxinqu.pdf", "_blank")}
-          type="button"
-          className="btn btn-primary mt-2"
-        >
-          <DownloadIcon style={{ marginRight: 5 }} />
-          Download Resume
-        </button>
-      </div>
+      <div className="row d-flex justify-content-center "></div>
       <h3
         style={{
           textAlign: "center",
